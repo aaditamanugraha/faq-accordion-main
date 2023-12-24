@@ -6,12 +6,55 @@
   --font-work-sans: "Work Sans", sans-serif;
 }
 
+body {
+  font-family: var(--font-work-sans);
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background-color: var(--color-light-pink);
+  background-image: url(/assets/images/background-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
+.main {
+  width: 40%;
+  padding: 3%;
+  background-color: var(--color-white);
+  border-radius: 16px;
+}
+
+.header h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin: 0 0.5rem;
+}
+
+.header {
+  display: flex;
+}
+
+.faq-card {
+    margin-top: 24px;
+}
+
+.faq-card h4 {
+  margin: 0;
+}
 
 .attribution {
   font-size: 11px;
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.attribution p {
+  color: var(--color-dark-purple);
 }
