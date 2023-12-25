@@ -1,9 +1,19 @@
-let test = "Hello World!";
+document.addEventListener("DOMContentLoaded", function () {
+  const faqCard = document.querySelectorAll(".faq-card");
 
-const faqCard = document.getElementsByClassName("faq-card");
+  faqCard.forEach(function (item) {
+    const question = item.querySelector(".question");
+    const answer = item.querySelector(".answer");
+    const icon = item.querySelector(".icon");
 
-for (let i = 0; i < faqCard.length; i++) {
-  faqCard[i].addEventListener("click", () => {
-    console.log("Berhasil");
+    question.addEventListener("click", function () {
+      question.classList.toggle("active");
+
+      if (answer.style.display === "block") {
+        answer.style.display = "none";
+      } else {
+        answer.style.display = "block";
+      }
+    });
   });
-}
+});

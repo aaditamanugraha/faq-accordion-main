@@ -68,13 +68,12 @@ body {
   overflow: hidden;
 }
 
-.answer:hover {
-  color: var(--color-grayish-purple);
+.answer.active {
+  border: 1px solid black;
 }
 
-.faq-card .active .answer {
-  display: block;
-  overflow: auto;
+.answer:hover {
+  color: var(--color-grayish-purple);
 }
 
 .attribution {
