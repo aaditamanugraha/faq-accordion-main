@@ -46,15 +46,15 @@ body {
   margin-bottom: 16px;
 }
 
+.faq-card:hover {
+  color: var(--color-light-purple);
+  cursor: pointer;
+}
+
 .question {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.faq-card:hover {
-  color: var(--color-light-purple);
-  cursor: pointer;
 }
 
 .question h4 {
@@ -65,7 +65,6 @@ body {
   color: var(--color-grayish-purple);
   font-size: 14px;
   display: none;
-  overflow: hidden;
 }
 
 .answer.active {
