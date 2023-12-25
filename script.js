@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
         answer.style.display = "block";
         icon.src = "./assets/images/icon-minus.svg";
         icon.style.transform = 'rotate(180deg)';
+        icon.style.transition = "0.3s ease";
       }
     });
   });
