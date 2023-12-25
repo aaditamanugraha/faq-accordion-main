@@ -12,9 +12,12 @@ document.addEventListener("DOMContentLoaded", function () {
       if (answer.style.display === "block") {
         answer.style.display = "none";
         icon.src = "./assets/images/icon-plus.svg";
+        icon.style.transform = 'rotate(0deg)';
+        icon.style.transition = "0.3s ease";
       } else {
         answer.style.display = "block";
         icon.src = "./assets/images/icon-minus.svg";
+        icon.style.transform = 'rotate(180deg)';
       }
     });
   });
